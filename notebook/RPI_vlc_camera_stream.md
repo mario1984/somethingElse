@@ -2,10 +2,10 @@
 ---
 ##basic info
 |图像          | VNC       | SSH    | VLC stream |
-| --------       |：---------：| -------  | ----------        |
-|RPI 3 LITE  | √            | ×       |     未试        |
-|RPI 3         | √            | ×       | √                |
-|RPI 2         | √            | ×       | √                |
+| --------     |：-------：| -----  | ----       |
+|RPI 3 LITE    | √         | ×      |    未试    |
+|RPI 3         | √         | ×      | √          |
+|RPI 2         | √         | ×      | √          |
 
 ---
 ##1. raspberry 2 
@@ -57,7 +57,7 @@ exit 0
 sudo chmod 755 /etc/init.d/tightvncserver
 sudo update-rc.d tightvncserver defaults
 ```
-*continue...*
+*continue...*<br>
 6. restart
 7. install VLC
 > There are several options you can choose between. At my work we are using VLC to stream video captured by Raspberry Pi Camera from our server-rooms to the office. One downside of this is that there are about 5 seconds delay and I haven't found a solution to this. The following is our setup:
@@ -95,7 +95,7 @@ rtsp://192.168.2.2:8554/
 ```
 ---
 ##2. raspberry 3
-*1~6 are the same with RPI 2.*
+*1~6 are the same with RPI 2.*<br>
 7. install VLC
 ```
 sudo apt-get update
