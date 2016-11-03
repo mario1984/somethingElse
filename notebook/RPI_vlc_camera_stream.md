@@ -2,7 +2,7 @@
 ---
 ##basic info
 |图像          | VNC       | SSH    | VLC stream |
-| --------     |：-------：| -----  | ----       |
+|------------- |:---------:|:------:|:----------:|
 |RPI 3 LITE    | √         | ×      |    未试    |
 |RPI 3         | √         | ×      | √          |
 |RPI 2         | √         | ×      | √          |
@@ -111,7 +111,7 @@ runvlc.sh:
 raspivid -o - -t 0 -w 640 -h 360 -fps 25|cvlc stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8090}' :demux=h264
 ```
     sudo chmod +x runvlc.sh
-*continue...*
+*continue...*<br>
 8. `http://192.168.2.2:8090/`on the PC VLC
 
 ---
