@@ -93,7 +93,9 @@ crontab -e
 ```
 rtsp://192.168.2.2:8554/
 ```
+
 ---
+
 ##2. raspberry 3
 *1~6 are the same with RPI 2.*<br>
 7. install VLC
@@ -126,3 +128,4 @@ raspivid -o - -t 0 -w 640 -h 360 -fps 25|cvlc stream:///dev/stdin --sout '#stand
 * [玩转树莓派－RaspBerry，安装VNC远程桌面服务 - openthings - 开源中国社区](https://my.oschina.net/u/2306127/blog/388798)
 * [Raspberry PI (Ver 2.0) + PI Cam as a stable RTSP Server - Synology Forum](https://forum.synology.com/enu/viewtopic.php?t=98870)
 * [networking - How can I connect my Pi directly to my PC and share the internet connection? - Raspberry Pi Stack Exchange](http://raspberrypi.stackexchange.com/questions/11684/how-can-i-connect-my-pi-directly-to-my-pc-and-share-the-internet-connection)
+* [linux - Capture RTSP stream from IP Camera and store - Super User](http://superuser.com/questions/766437/capture-rtsp-stream-from-ip-camera-and-store)
