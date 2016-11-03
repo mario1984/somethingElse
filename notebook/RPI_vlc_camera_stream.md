@@ -58,7 +58,7 @@ sudo chmod 755 /etc/init.d/tightvncserver
 sudo update-rc.d tightvncserver defaults
 ```
 *continue...*<br>
-6. restart
+6. restart<br>
 7. install VLC
 > There are several options you can choose between. At my work we are using VLC to stream video captured by Raspberry Pi Camera from our server-rooms to the office. One downside of this is that there are about 5 seconds delay and I haven't found a solution to this. The following is our setup:
 
