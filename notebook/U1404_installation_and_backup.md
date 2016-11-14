@@ -12,7 +12,7 @@
 ###ubuntu常用软件:
     sudo apt-get install aptitude
 **使用aptitude安装：**<br>
->vim , zsh , git , qt-creator , flash_plugin , terminator , etcher , remastersys , 
+>vim , zsh , git , qt-creator , flash_plugin , vlc , terminator , etcher , remastersys 
 
 **install oh-my-zsh:**<br>
 ```
