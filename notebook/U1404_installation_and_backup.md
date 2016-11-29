@@ -6,7 +6,7 @@
 3. 重启安装ubuntu，将系统安装在磁盘上删除的空间里，`/swap`分区设置为内存大小，`/` 根目录分区ext4格式大小为剩下的空间。
 4. 进入ubuntu桌面后更换镜像，update，安装常用软件。
 5. 配置好适合的系统之后使用[remastersys](https://github.com/mutse/remastersys)制作backup镜像iso文件。
-6. 使用windows的[ultraiso](http://cn.ultraiso.net/)制作启动盘(使用ubuntu的etcher制作的无法安装，纳尼-.-||) 。
+6. 使用windows的[ultraiso](http://cn.ultraiso.net/)制作启动盘(使用ubuntu的etcher制作的无法安装) 。
 
 ---
 ###ubuntu常用软件:
