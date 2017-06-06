@@ -15,7 +15,7 @@ $ git clone https://github.com/ros-drivers/urg_node.git
 ```
 $ roslaunch urg_node urg_lidar.launch
 ```
-*references*
+*references:*
 - https://github.com/ros-perception/laser_proc
 - https://github.com/ros-drivers/urg_c
 - https://github.com/ros-drivers/driver_common
