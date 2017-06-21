@@ -1,5 +1,5 @@
 # raspberry pi 2 wifi configeration.
-##树莓派2，realtek网卡无线上网设置。
+## 树莓派2，realtek网卡无线上网设置。
 ![](imgs/20170619-203008.png)
 
 ### 1.安装前准备：
@@ -62,7 +62,7 @@ network={
 ### 8.使用`sudo ifdown wlan0`和`sudo ifup wlan0`重新启动无线网络 。
 
 
-#reference:
+## reference:
 * http://www.jianshu.com/p/b42e8d3df449
 * http://www.cnblogs.com/imapla/p/5532993.html
 * http://mirrors.aliyun.com/raspbian/raspbian/pool/non-free/f/firmware-nonfree/
