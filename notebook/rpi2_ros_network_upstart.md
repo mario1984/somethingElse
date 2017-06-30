@@ -7,6 +7,7 @@
 * follow ROS network setup [page](http://wiki.ros.org/ROS/NetworkSetup#Configuring_.2BAC8-etc.2BAC8-hosts).
 
 ## 3. chmod ttyACM* while upstart.
+* if device cannot be found while started, then use following method.
 * make a rules file in `/etc/udev/rules.d/` directory.  for example:
 ```
 $ cd /etc/udev/rules.d
@@ -36,7 +37,19 @@ $ rosrun robot_upstart install auto_start/launch/auto.launch \
 > --rosdistro indigo\
 > --master http://192.168.0.115:11311
 ```
-
+## 5. rpi2 uninstall upstart scripts.
+* to uninstall upstart scripts:
+```
+$ rosrun robot_upstart uninstall <scripts-package-name>
+```
+* if it doesn't work, delete following files.
+```
+/etc/init/upstart.conf
+/etc/ros/indigo/upstart.d/.installed_files
+/etc/ros/indigo/upstart.d/<scripts-name>
+/usr/sbin/upstart-start
+/usr/sbin/upstart-stop
+```
 ## reference:
 - http://docs.ros.org/indigo/api/robot_upstart/html/
 - http://docs.ros.org/indigo/api/robot_upstart/html/install.html
