@@ -32,10 +32,10 @@ ACTION=="add", KERNEL=="ttyACM[0-9]*", ATTRS{idVendor}=="ffff", ATTRS{idProduct}
 * example:
 ```
 $ rosrun robot_upstart install auto_start/launch/auto.launch \
-> --interface wlan0\
-> --user ubuntu\
-> --rosdistro indigo\
-> --master http://192.168.0.115:11311
+  --interface wlan0\
+  --user ubuntu\
+  --rosdistro indigo\
+  --master http://192.168.0.115:11311
 ```
 ## 5. rpi2 uninstall upstart scripts.
 * to uninstall upstart scripts:
