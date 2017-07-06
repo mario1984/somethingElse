@@ -2,14 +2,18 @@
 ---
 ## basic info
 
-|图像          | VNC       | SSH    | VLC stream |
+|   Raspbian Jessie  | VNC       | SSH    | VLC stream |
+|------------------- |:---------:|:------:|:----------:|
+|RPI 3 Jessie LITE   | √         | ×      | not tested |
+|RPI 3 Jessie        | √         | ×      | √          |
+|RPI 2 Jessie        | √         | ×      | √          |
+
+|ubuntu 14.04  | VNC       | SSH    | VLC stream |
 |------------- |:---------:|:------:|:----------:|
-|RPI 3 LITE    | √         | ×      |    未试    |
-|RPI 3         | √         | ×      | √          |
-|RPI 2         | √         | ×      | √          |
+|RPI 2         |not tested | ×      | √          |
 
 ---
-## 1. raspberry 2 
+## 1. raspberry 2 (Raspbian Jessie)
 1. Add ip address `eg:192.168.2.2` to /boot/cmdline.txt. Change the PC eth0     address to `eg:192.168.2.3`.
 2. Connect RPI and PC with ethernet and startup RPI.
 3. ssh into RPI and enable camera with `sudo raspi-config` then reboot.
@@ -97,7 +101,7 @@ rtsp://192.168.2.2:8554/
 
 ---
 
-## 2. raspberry 3
+## 2. raspberry 3 (Raspbian Jessie)
 *1~6 are the same with RPI 2.*<br>
 7. install VLC
 ```
@@ -117,8 +121,15 @@ raspivid -o - -t 0 -w 640 -h 360 -fps 25|cvlc stream:///dev/stdin --sout '#stand
 *continue...*<br>
 8. `http://192.168.2.2:8090/`on the PC VLC
 
+## 3. raspberry 2 (Ubuntu 14.04)
+1. add a line "start_x=1" at the bottom of the file `/boot/firmware/config.txt`, then reboot.
+2. install vlc by `sudo apt-get install vlc`.
+3. touch a script.sh file and add `raspivid -o - -t 0 -hf -w 640 -h 360 -fps 25 | cvlc -vvv stream:///dev/stdin --sout '#rtp{sdp=rtsp://:8554}' :demux=h264`, chmod +x to the script.sh file.
+4. run the script to see the stream from rpi screen.
+5. use `rtsp://192.168.1.115:8554/` to see VLC stream from other devices.
+
 ---
-##websites referring to
+## references:
 * [Camera Module - Raspberry Pi Documentation](https://www.raspberrypi.org/documentation/usage/camera/)
 * [Camera board comparisons: Pi NoIR v1 vs Pi NoIR v2 - Raspberry Pi](https://www.raspberrypi.org/blog/camera-board-comparisons-pi-noir-v1-vs-pi-noir-v2/)
 * [Raspberry Pi • View topic - Can't force wlan0: to use static IP](https://www.raspberrypi.org/forums/viewtopic.php?f=91&t=22660)
