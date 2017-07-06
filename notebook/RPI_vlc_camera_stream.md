@@ -1,6 +1,7 @@
-#How VLC get video stream from RPI 2gen & 3gen via ethernet. | 树莓派2代和3代使用以太网传输cam视频流方法
+# How VLC get video stream from RPI 2gen & 3gen via ethernet. | 树莓派2代和3代使用以太网传输cam视频流方法
 ---
-##basic info
+## basic info
+
 |图像          | VNC       | SSH    | VLC stream |
 |------------- |:---------:|:------:|:----------:|
 |RPI 3 LITE    | √         | ×      |    未试    |
@@ -8,7 +9,7 @@
 |RPI 2         | √         | ×      | √          |
 
 ---
-##1. raspberry 2 
+## 1. raspberry 2 
 1. Add ip address `eg:192.168.2.2` to /boot/cmdline.txt. Change the PC eth0     address to `eg:192.168.2.3`.
 2. Connect RPI and PC with ethernet and startup RPI.
 3. ssh into RPI and enable camera with `sudo raspi-config` then reboot.
@@ -96,7 +97,7 @@ rtsp://192.168.2.2:8554/
 
 ---
 
-##2. raspberry 3
+## 2. raspberry 3
 *1~6 are the same with RPI 2.*<br>
 7. install VLC
 ```
