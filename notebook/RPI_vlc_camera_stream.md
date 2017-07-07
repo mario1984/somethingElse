@@ -141,3 +141,4 @@ raspivid -o - -t 0 -w 640 -h 360 -fps 25|cvlc stream:///dev/stdin --sout '#stand
 * [Raspberry PI (Ver 2.0) + PI Cam as a stable RTSP Server - Synology Forum](https://forum.synology.com/enu/viewtopic.php?t=98870)
 * [networking - How can I connect my Pi directly to my PC and share the internet connection? - Raspberry Pi Stack Exchange](http://raspberrypi.stackexchange.com/questions/11684/how-can-i-connect-my-pi-directly-to-my-pc-and-share-the-internet-connection)
 * [linux - Capture RTSP stream from IP Camera and store - Super User](http://superuser.com/questions/766437/capture-rtsp-stream-from-ip-camera-and-store)
+* https://www.raspberrypi.org/forums/viewtopic.php?f=28&t=113019
