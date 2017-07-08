@@ -16,3 +16,5 @@
 $ ssh <SSO username>@<ip address>
 ```
 * no password needed.
+## reference:
+- https://insights.ubuntu.com/2017/01/27/ros-on-arm64-with-ubuntu-core/ (turn snap to apt-get)
