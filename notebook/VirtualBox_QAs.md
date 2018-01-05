@@ -7,5 +7,6 @@ sudo mount -t vboxsf vb_share ~/vb_share/
 ```
 * Done!
 
+-------
 *references*
-https://www.virtualbox.org/manual/
+* https://www.virtualbox.org/manual/
