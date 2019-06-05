@@ -1,6 +1,6 @@
 # Ubuntu 14.04 installation and backup | Ubuntu 安装与系统镜像笔记
 
-###步骤：
+### 步骤：
 1. Ubuntu下使用Disks分区：`Ubuntu下使用Disks对磁盘分区，保留一定大小的fat32或ntfs格式分区，剩余分区删除`
 2. 使用[etcher](http://www.etcher.io)制作启动盘。
 3. 重启安装ubuntu，将系统安装在磁盘上删除的空间里，`/swap`分区设置为内存大小，`/` 根目录分区ext4格式大小为剩下的空间。
@@ -9,7 +9,7 @@
 6. 使用windows的[ultraiso](http://cn.ultraiso.net/)制作启动盘(使用ubuntu的etcher制作的无法安装) 。
 
 ---
-###ubuntu常用软件:
+### ubuntu常用软件:
     sudo apt-get install aptitude
 **使用aptitude安装：**<br>
 >vim , zsh , git , qt-creator , flash_plugin , vlc , terminator , etcher , remastersys 
