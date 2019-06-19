@@ -23,5 +23,8 @@ $ chsh -s /bin/zsh
 **install vim_plugin:**<br>
 ```
 $ wget -qO- https://raw.github.com/ma6174/vim/master/setup.sh | sh -x
+or:
+$ git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+$ sh ~/.vim_runtime/install_awesome_vimrc.sh
 ```
 
